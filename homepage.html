@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Khub Project</title>
@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 <style>
 body {
   background-color: #EBE8DC;
@@ -16,18 +17,12 @@ body {
 .middle {
   width: 100%;
   height: auto;
-  padding-top: 0;
   padding: 3%;
   background-color: #E4DDD7;
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   direction: ltr;
-}
-
-.middle h1{
-  margin-top: -0.5px;
-  margin-bottom: 10px;
 }
 
 h1, h2 {
@@ -90,33 +85,6 @@ h3, h4, h5, p {
   }
 }
 
-.botnav {
-  height: auto;
-  width: 100%;;
-  background-color: #AFAC9B;
-}
-
-.botnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  margin: 15px;
-  margin-left: 25px;
-  padding: 5px;
-  padding-top: 5px;
-  text-decoration: none;
-  font-family: "DM Sans", Sans-serif;
-  font-size: 20px;
-}
-
-.botnav a:hover {
-  color: white;
-}
-
-.botnav a.active {
-  color: white;
-}
-
 .logo-image{
     width: auto;
     height: 90px;
@@ -146,114 +114,17 @@ h3, h4, h5, p {
   font-size: 25px;
 }
 
-.cor {
-  border-radius: 30px;
-  background: #FFFEF7;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  width: 100%;
-  height: 100%;
-  padding: 30px;
-  margin-top: 40px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.corners1 {
-  display: block;
-}
-
-.dropbtn {
-  font-family: "DM Sans", Sans-serif;
-  color: #646257;
-  font-size: 25px;
-  padding: 15px;
-  text-decoration: none;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  color: #8B857A;
-}
-
-.dropbtn i {
-  font-size: 25px;
-  color: #646257;
-  padding-right: 0.5rem;
-}
-
-.dropbtn a, i:hover {
-  color: #8B857A
-}
-
-.corners1-content {
-  display: none;
-  padding-left: 25px;
-}
-
-.column p {
-  font-family: "DM Sans", Sans-serif;
-  color: #8DFF95;
-  font-size: 20px;
-  margin: 0;
-  text-decoration: none;
-  display: block;
-}
-
-.show {display: block;}
-
-.column {
-  float: left;
-  width: 30%;
-  border: 2px solid #4B493F;
-  border-radius: 20px;
-  background: #C4BAAF;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  padding: 15px;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  height: 5%;  
-  text-align: center;
-  z-index: 1;
-}
-
-.row {
-  margin-right: -15px;
-  margin-left: 0px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-   @media screen and (max-width: 600px) {
-      .column {
-         width: 100%;
-         margin-top: 10px;
-         margin-left: 0;
-      }
-   }
-
 form.example input[type=text] {
   border-radius: 30px;
-  border: none;
-  margin-top: 20px;
-  margin-right: 25px;
-  padding: 5px;
-  padding-top: 5px;
-  font-size: 20px;
-  float: right;
-  width: 25%;
-  height: 10%; 
+  border: 2px solid #4B493F;
+  padding: 15px;
+  padding-left: 25px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  float: left;
+  width: 85%;
+  height: 5%; 
   background: #C4BAAF;
 }
 
@@ -286,6 +157,43 @@ form.example::after {
   background: #8B857A;
 }
 
+@media screen and (max-width:600px) {
+ .column, .column.middle {
+    width: 100%;
+ }
+}
+
+div.gallery {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.gallery:hover {
+  border-radius: 25px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: left;
+}
+
+div.desc p, h3 {
+  color: #646257;
+}
+
+div.desc h5 {
+  color: #AFAC9B;   
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .responsive {
   padding: 0 6px;
   float: left;
@@ -313,16 +221,6 @@ form.example::after {
 
 img {
   border-radius: 25px;
-}
-
-hr {
-  width: 100%;
-  height: 3px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #646257;
-  border: 0 none;
 }
 
 .flex-rw {
@@ -375,86 +273,73 @@ footer h4 {
       }
    }
 
+
 </style>
 </head>
 
 <div class="topnav" id="myTopnav">
-  <img class="logo-image" src="http://pisaycaraga.net/portal/dist/img/pisay-logo.png" alt="Pisay">
+  <img class="logo-image active" src="http://pisaycaraga.net/portal/dist/img/pisay-logo.png" alt="Pisay">
   <a href="#">Author</a>
   <a href="#">Courses</a>
   <a href="#">Dashboard</a>
   <a href="#">Home</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction2(this)">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction(this)">
     <i class="fa fa-bars"></i>
   </a>
 </div>
 
-<div class="botnav">
-  <a href="#">Course</a>
-  <a href="#">Participants</a>
-  <a href="#">Grades</a>
+<div class="middle mainbody">
+
+    <h1><b>PSHS Knowledge Hub - CLC</b></h1>
   <form class="example" action="/action_page.php">
     <input type="text" placeholder="Search..." name="search">
   </form>
-</div>
-
-<div class="middle mainbody">
-
-    <h1><b>Computer Science 3</b></h1>
-
-<div class="cor">
-  <div class="corners1">
-    <button onclick="myFunction(this)" class="dropbtn"><i class="fa fa-arrow-down"></i><b>General</b></button>
-    <hr>
-  <div id="myDropdown" class="row corners1-content">
-    <div class="column">
-    <p><b>Announcements</b></p>
-    <p style="color: #FFFEF7; font-size: 16px">News from the teacher</p>
+    <h3><b>Latest Announcements</b></h3>
+    <div class="corners">
+      <h5>There are no announcements as of the moment.</h5>
   </div>
+    <h3><b>Recently Accessed Courses</b></h3>
 
-  <div class="column">
-    <p><b>1Q Modules and Codes</b></p>
-    <p style="color: #FFFEF7; font-size: 16px">Learning how to HTML</p>
-  </div>
-
-  <div class="column">
-    <p style="color: #FF4E4E"><b>2Q Modules and Codes</b></p>
-    <p style="color: #FFFEF7; font-size: 16px">Erasing the hard parts</p>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t1.15752-9/320704548_575099734070318_2718932061494842348_n.jpg?stp=dst-jpg_s2048x2048&_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeG1vYBt3ESn9-nR3EJWxrkZVzSnNfZvVXJXNKc19m9VcphqxQK-bxtee8AXcPQCT2oG2Ar662G4nw9GnMidnWA_&_nc_ohc=7BXcdLq_RAEAX-AP49G&_nc_ht=scontent.fmnl4-5.fna&oh=03_AdQdteO_yI6_jn97cZT0xtERUBE1Xt0tfBE3dFbnKwoBbg&oe=63ECAE57" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">
+      <p>Client-Side Web Development</p>
+      <h3> Computer Science 3 </h3>
+      <h5> Jan Michael Ibanez </h5>
+      </div>
   </div>
 </div>
-</div>
 
-  <div class="corners1">
-    <button onclick="myFunction(this)" class="dropbtn"><i class="fa fa-arrow-down"></i><b>First Quarter</b></button>
-    <hr>
-
-  <div id="myDropdown1" class="row corners1-content">
-    <div class="column">
-    <p style="color: #FF4E4E"><b>1st Qtr Project</b></p>
-    <p style="color: #FFFEF7; font-size: 16px">Final Output</p>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t1.15752-9/325524288_728558635506565_8737358457409947906_n.jpg?stp=dst-jpg_s2048x2048&_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeEtIOg6dEfnePW8j353DE4blLe06aGJY0iUt7TpoYljSIuxgTbtXZBnXSD9lTxQAYlGSBkdHKdFRIwcupQDOuaz&_nc_ohc=GRQ-fetv1m4AX_YmYxc&_nc_ht=scontent.fmnl4-5.fna&oh=03_AdTtCm7Q-UolYCHI3NSwtHpuIDi7fcq2nAiEgLLc_wnTbA&oe=63ECC2FE" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">
+      <p>General Inorganic Chemistry 1</p>
+      <h3> Chemistry 1 </h3>
+      <h5> Princess Ann Digneneng </h5>
+      </div>
   </div>
-
-</div>
 </div>
 
-  <div class="corners1">
-    <button onclick="myFunction(this)" class="dropbtn"><i class="fa fa-arrow-down"></i><b>Second Quarter</b></button>
-    <hr>
-
-  <div id="myDropdown2" class="row corners1-content">
-    <div class="column">
-    <p><b>2Q Quiz One</b></p>
-    <p style="color: #FFFEF7; font-size: 16px">Review about our lesson</p>
-  </div>
-
-  <div class="column">
-    <p style="color: #FF4E4E"><b>2Q Peer Evaluation</b></p>
-    <p style="color: #FFFEF7; font-size: 16px">Rate your groupmates</p>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/325676470_1376316066529854_6949266406244612298_n.jpg?stp=dst-jpg_s2048x2048&_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGovHTZAEUFz3w7HPz84twHQjBx722rz4RCMHHvbavPhJUK5pUF02W07wSqTsL3tQldfoNcPl_pAmCIVA0gGAiZ&_nc_ohc=1L96W2jzlRoAX9d2kUC&_nc_ht=scontent.fmnl4-1.fna&oh=03_AdShHEVm18s2iChjA8oy2ga18ZPR2W6RNLPWWkJnLB5a0Q&oe=63ECCC71" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">
+      <p>Retorika: Pagsusuri at Pagpapahalagang Pampanitikan</p>
+      <h3> Filipino 3 </h3>
+      <h5> Charisse Mendoza </h5>
+      </div>
   </div>
 </div>
 </div>
-</div>
-</div>
+
 
 <footer>
   <div class="flex-rw footer-row">
@@ -481,11 +366,7 @@ footer h4 {
 </footer>
 
 <script>
-  function myFunction(a) {
-  a.parentNode.getElementsByClassName("corners1-content")[0].classList.toggle("show");
-}
-
-function myFunction2(a) {
+function myFunction(a) {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -494,6 +375,6 @@ function myFunction2(a) {
   }
 }
 </script>
-
 </body>
 </html>
+
