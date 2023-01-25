@@ -196,11 +196,20 @@ h3, h4, h5, p {
 
 .column p, a {
   font-family: "DM Sans", Sans-serif;
+  text-decoration: none;
   color: #8DFF95;
   font-size: 20px;
   margin: 0;
-  text-decoration: none;
   display: block;
+}
+
+.column a:hover {
+  text-decoration: none;
+  color: #CDEDCF;
+}
+
+.column a.active {
+  color: #CDEDCF;
 }
 
 .show {display: block;}
@@ -443,7 +452,7 @@ footer h4 {
 
   <div id="myDropdown2" class="row corners1-content">
     <div class="column">
-    <p><a href="https://npinon2026.github.io/npinon2026-khub/quiz.html"><b>2Q Quiz One</b></a></p>
+    <a href="https://npinon2026.github.io/npinon2026-khub/quiz.html"><b>2Q Quiz One</b></a>
     <p style="color: #FFFEF7; font-size: 16px">Review about our lesson</p>
   </div>
 
@@ -497,3 +506,4 @@ function myFunction2(a) {
 
 </body>
 </html>
+
