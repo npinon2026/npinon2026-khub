@@ -1,1 +1,156 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Khub Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM&20Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+body, h1  {font-family: "DM Sans", Sans-serif;}
 
+body {
+  background-image: url('https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.15752-9/327096303_874238393695901_7275102885534303937_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeEgfaNCGAI1vfwc6RmRgH5gP_Ic_g_ZrVs_8hz-D9mtW38gwErPhZyXt9XzgsuAekaLGv2vjvxJ72cDb1-Wsslf&_nc_ohc=noMFEVrfN6YAX-PuOSC&_nc_ht=scontent.fmnl4-2.fna&oh=03_AdTyLhxgItreHxPXE2U4QW1VR3L27JleMKi7QpfjTBKNVA&oe=63F73C55');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.mainbody {
+  color: #E4E2D7;
+  margin: 30px;
+  margin-top: 0;
+}
+
+.mainbody h1 {
+  margin-top: 8px;
+  font-size: 80px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width : 600px) {
+.mainbody h1 {
+  font-size: 50px;
+  }
+}
+
+.topnav {
+  height: auto;
+  width: 100%;;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  margin: 35px;
+  margin-right: 35px;
+  padding: 5px;
+  padding-top: 25px;
+  text-decoration: none;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 30px;
+}
+
+.topnav a:hover {
+  color: white;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.logo-image{
+    width: auto;
+    height: 90px;
+    overflow: hidden;
+    margin: 35px;
+    margin-bottom: 0;
+}
+
+.button {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 6px solid #FFFFFF;
+  padding: 16px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 30px;
+  margin-top: 130px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+@media screen and (max-width : 600px) {
+.button {
+  font-size: 15px;
+  }
+}
+
+.button:hover {background-color: #FFFFFF;}
+
+</style>
+</head>
+<body>
+
+<div id="myTopnav" class="topnav">
+  <img class="logo-image" src="http://pisaycaraga.net/portal/dist/img/pisay-logo.png" alt="Pisay">
+  <a href="#">Scholar's Pledge</a>
+  <a href="#">Mission</a>
+  <a href="#">Vision</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="mainbody">
+  <h1>Welcome to the<br>PSHS-CLC<br>Knowledge-Hub</h1>
+   <div>
+    <button class="button"><b>Log-In</b></button>
+    </div>
+</div>
+
+<script>
+function myFunction(a) {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
