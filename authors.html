@@ -1,1 +1,349 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans">
+<head>
+    <style>
+        body {
+          background-color: #E4DDD7;
+          margin: 0;
+          font-family: "DM Sans", Sans-serif;
+          color: #333333;
+        }
+        
+        h1, h2 {
+          color: #646257;
+          font-family: "DM Sans", Sans-serif;
+        }
+        
+        h3, h4, h5, p {
+          color: #8B887A;
+          font-family: "DM Sans", Sans-serif;
+        }
+        
+.topnav {
+  height: auto;
+  width: 100%;;
+  overflow: hidden;
+  background-color: #8B857A;
+  position: -webkit-sticky;
+  position: sticky;
+}
 
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  margin: 20px;
+  padding: 15px;
+  padding-top: 15px;
+  text-decoration: none;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 30px;
+}
+
+.topnav a:hover {
+  color: white;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}  
+        
+.logo-image{
+    width: auto;
+    height: 90px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 13px 16px;
+}
+
+.middle {
+  width: 100%;
+  height: auto;
+  padding: 3%;
+  background-color: #E4DDD7;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  direction: ltr;
+}
+        
+        .corners {
+          border-radius: 30px;
+          border: 2px solid #4B493F;
+          background: #C4BAAF;
+          overflow-x: auto;
+          overflow-y: hidden;
+          white-space: nowrap;
+          padding: 8px;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-bottom: 50px;
+          margin-top: 20px;
+          width: 55%;
+          height: 5%;  
+          text-align: center;
+        }
+        
+        form.example input[type=text] {
+          border-radius: 30px;
+          border: 2px solid #4B493F;
+          padding: 15px;
+          margin-top: 25px;
+          margin-bottom: 25px;
+          font-size: 20px;
+          float: left;
+          width: 85%;
+          height: 5%; 
+          background: #C4BAAF;
+        }
+        
+        form.example::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        ::placeholder {
+          color: #8B887A;
+          font-family: "DM Sans", Sans-serif;
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        ::-webkit-scrollbar {
+          width: 15px;
+        }
+             
+        ::-webkit-scrollbar-track {
+          background: #BDB9A3;
+          border-radius: 0px;
+          }
+             
+        ::-webkit-scrollbar-thumb {
+          background: #AFAC9B;
+          border-radius: 0px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #8B857A;
+        }
+        
+        @media screen and (max-width:600px) {
+         .column, .column.middle {
+            width: 100%;
+         }
+        }
+        div.gallery {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        
+        div.gallery:hover {
+          border-radius: 25px;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 5px;
+          text-align: left;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 33.33%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 50%;
+            margin: 6px 0;
+          }
+        }
+        
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+        
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        table {
+            background-color: #FFFEF7;
+            color: #8B887A;
+            max-height: 1980px;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 0px;
+            margin-top: 2%;
+            border-radius: 25px;
+            height: 100%;
+        }
+        th {
+            font-size: 16px;
+            height: 40px;
+            font-family: "DM Sans", sans-serif;
+        }
+        td {
+            font-size: 20px;
+            height:100px;
+            font-family: "DM Sans", sans-serif;
+            display: flex;
+        }
+        .authorpic {
+            padding: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border-radius: 70px;
+            border-right: 20px;
+        }
+
+        .flex-rw {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+footer {
+  background: #FFFEF7;
+  padding-top: 0;
+  padding: 20px;
+  width: 100%;
+}
+
+footer h4 {
+  font-size: 25px;
+}
+
+.footer-column {
+  width: 33.333%
+}
+
+.footer-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+   @media screen and (max-width: 600px) {
+      .footer-column {
+         width: 100%;
+      }
+   }
+
+   @media screen and (max-width: 600px) {
+      .footer-left, .footer-right {
+         text-align: center!important;
+      }
+   }
+        </style>
+</head>
+<body>
+
+<div class="topnav">
+  <img class="logo-image active" src="http://pisaycaraga.net/portal/dist/img/pisay-logo.png" alt="Pisay">
+  <a href="https://npinon2026.github.io/npinon2026-khub/authors.html">Author</a>
+  <a href="https://npinon2026.github.io/npinon2026-khub/courses.html">Courses</a>
+  <a href="https://npinon2026.github.io/npinon2026-khub/dashboard.html">Dashboard</a>
+  <a href="https://npinon2026.github.io/npinon2026-khub/">Home</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+    <div class="column middle">
+        <table>
+            <tr>
+                <th>Coders</th>
+            </tr>
+            <tr>
+                <td><img class="authorpic" src="https://khub.clc.pshs.edu.ph/pluginfile.php/806/user/icon/moove/f1?rev=12091" alt="Brynn"><img class="authorpic" src="https://khub.clc.pshs.edu.ph/pluginfile.php/44922/user/icon/moove/f1?rev=2274516" alt="Nicolette"><img class="authorpic" src="https://khub.clc.pshs.edu.ph/pluginfile.php/777/user/icon/moove/f1?rev=11554" alt="Zab"></td>
+            </tr>
+            <tr>
+                <th>Brynn Kahlil Sales * Nicolette Anne Pinon * Zabdiel Elohim Lopez</th>
+            </tr>
+            <tr><th></th></tr>
+            <tr>
+                <th>Designers</th>
+            </tr>
+            <tr>
+                <td><img class="authorpic" src="https://khub.clc.pshs.edu.ph/pluginfile.php/806/user/icon/moove/f1?rev=12091" alt="Brynn"><img class="authorpic" src="https://khub.clc.pshs.edu.ph/pluginfile.php/43609/user/icon/moove/f1?rev=4718423" alt="Gwyn"><img class="authorpic" src="https://khub.clc.pshs.edu.ph/pluginfile.php/797/user/icon/moove/f1?rev=4719106" alt="Jeff"><img class="authorpic" src="https://khub.clc.pshs.edu.ph/pluginfile.php/44922/user/icon/moove/f1?rev=2274516" alt="Nicolette"><img class="authorpic" src="https://khub.clc.pshs.edu.ph/pluginfile.php/777/user/icon/moove/f1?rev=11554" alt="Zab"></td>
+            </tr>
+            <tr>
+                <th>Brynn Kahlil Sales * Gwyn Bugarin * Lord Jeffson Ceasar Perez * Nicolette Anne Pinon * Zabdiel Elohim Lopez</th>
+            </tr>
+            <tr><th></th></tr>
+            <tr>
+                <th>Cheerleaders</th>
+            </tr>
+            <tr>
+                <td><img class="authorpic" src="https://khub.clc.pshs.edu.ph/pluginfile.php/797/user/icon/moove/f1?rev=4719106" alt="Jeff"><img class="authorpic" src="https://khub.clc.pshs.edu.ph/pluginfile.php/777/user/icon/moove/f1?rev=11554" alt="Zab"></td>
+            </tr>
+            <tr>
+                <th>Lord Jeffson Ceasar Perez * Zabdiel Elohim Lopez</th>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+      <div class="flex-rw footer-row">
+      <div class="footer-column">
+        <div class="footer-left">
+          <h4>Contact Us!</h4>
+          <h4>Follow Us!</h4>
+          </div>
+      </div>
+    
+      <div class="footer-column">
+        <div class="footer-center">
+          <h4>Data Retention Summary</h4>
+          <h4>Policies</h4>
+          </div>
+      </div>
+    
+      <div class="footer-column">
+        <div class="footer-right">
+          <h4>Get the Mobile App</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+    </footer>
+</body>
+</html>
